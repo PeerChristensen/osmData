@@ -10,6 +10,7 @@ library(tidyverse)
 world <- ne_countries(scale = "medium", returnclass = "sf")
 
 dk <- read_sf("points.shp")
+dk <- st_read("points.shp")
 
 #dk <- dk %>% 
 #  filter(highway == "bus_stop") 
